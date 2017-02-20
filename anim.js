@@ -127,8 +127,14 @@ var animate = function() {
     canvas.height = window.innerHeight;
     height = canvas.height;
     width = canvas.width;
+    window.onresize = function() {
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	height = canvas.height;
+	width = canvas.width;
+    }
     img.src = "https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Dvd-video-logo.svg/1280px-Dvd-video-logo.svg.png";
-
+    
     draw();
 };
 
