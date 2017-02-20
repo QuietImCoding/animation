@@ -101,7 +101,6 @@ var animate = function() {
 	    }
 	}
 	if (isHovering(e.offsetX, e.offsetY, 1)) {
-	    console.log(2);
 	    DVDdraw = true;
 	    if (circledraw) {
 		circledraw = false;
